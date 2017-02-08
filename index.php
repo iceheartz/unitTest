@@ -2,7 +2,7 @@
 
 require_once 'vendor/autoload.php';
 
-$pages = new \Controllers\Core\Web\Pages();
+$page = new \Controllers\Core\Web\Pages();
 
 ?>
 
@@ -14,7 +14,7 @@ $pages = new \Controllers\Core\Web\Pages();
 </head>
 
 <body>
-<h1><?php echo $pages->render(); </h1>
+<h1><?php echo $pages->render(); ?></h1>
 <pre><?php var_dump($pages->returnArray()); ?></pre>
 </body>
 </html>
