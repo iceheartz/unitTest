@@ -2,32 +2,32 @@
 
 class PagesTest extends PHPUnit_Framework_TestCase
 {
+	protected $stack;
+
+    protected function setUp()
+    {
+        $this->stack = new \Controllers\Core\Web\Pages();
+    }
 	
 	public function testRenderReturnsHelloWorld()
-	{
-		$pages = new \Controllers\Core\Web\Pages();
-		
+	{		
 		$expected = "Hello World";
 		
-		$this->assertEquals($expected, $pages->render());
+		$this->assertEquals($expected, $this->stack->render());
 		
 	}
 	
 	public function testReturnTrueReturnsTrue()
-	{
-		$pages = new \Controllers\Core\Web\Pages();
+	{		
 		
-		
-		$this->assertTrue($pages->returnTrue());
+		$this->assertTrue($this->stack->returnTrue());
 		
 	}
 	
 	public function testReturnArrayReturnsValidArray()
-	{
-		$pages = new \Controllers\Core\Web\Pages();
+	{		
 		
-		
-		$this->assertTrue(is_array($pages->returnArray()));
+		$this->assertTrue(is_array($this->stack->returnArray()));
 		
 	}
 }
