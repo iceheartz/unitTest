@@ -13,8 +13,8 @@ class Pages
 	}
 	
 	public function returnArray(){
-		//return ["Hello","World","This","Is","An","Array"];
-		return;
+		return ["Hello","World","This","Is","An","Array"];
+		
 	}
 }
 
