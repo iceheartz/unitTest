@@ -1,0 +1,21 @@
+{
+   	"autoload":{
+		"psr-0":{
+			"Controllers": "app/"
+		}
+	},	
+	"name": "iceheartz/unit-test",
+    "description": "unit testing frameworks",
+    "type": "project",
+    "license": "none",
+    "authors": [
+        {
+            "name": "iceheartz",
+            "email": "iceheartz@gmail.com"
+        }
+    ],
+
+    "require-dev": {
+	"phpunit/phpunit": "3.7.*"
+	}	
+}
